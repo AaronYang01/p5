@@ -4,6 +4,8 @@ let y= [];
 let timer;
 let timeElapsed
 let time= 0;
+let loseScreen=false;
+let winScreen=false;
 
 function preload(){
   mario =loadImage("mario.png")
@@ -58,6 +60,8 @@ function draw(){
     background(0,0,0)
     fill (255,255,255)
       text("You win!", width/2, height/2);
+      loseScreen=false;
+      winScreen=true;
   }
   else {
       text(score, width/2, height/2);
@@ -66,5 +70,22 @@ function draw(){
     background(0,0,0)
     fill (255,255,255)
           text("You lose!", width/2, height/2);
+    loseScreen=true;
+    winScreen=false;
   }
+
+  function loseScreen(){
+    time=0;
+    background(0,0,0)
+    fill (255,255,255)
+          text("You lose!", width/2, height/2);
+  }
+
+  function winScreen(){
+  time=0;
+  background(0,0,0)
+  fill (255,255,255)
+        text("You win!", width/2, height/2);
+  }
+
 }
