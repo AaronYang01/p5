@@ -60,8 +60,7 @@ function draw(){
     background(0,0,0)
     fill (255,255,255)
       text("You win!", width/2, height/2);
-      loseScreen=false;
-      winScreen=true;
+      winScreen()
   }
   else {
       text(score, width/2, height/2);
@@ -70,8 +69,6 @@ function draw(){
     background(0,0,0)
     fill (255,255,255)
           text("You lose!", width/2, height/2);
-    loseScreen=true;
-    winScreen=false;
   }
 
   function loseScreen(){
