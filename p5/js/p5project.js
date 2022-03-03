@@ -6,7 +6,7 @@ let timeElapsed
 let time= 0;
 
 function preload(){
-  mario =loadImage("js/mario.png") 
+  mario =loadImage("mario.png") 
 }
 
 function setup(){
