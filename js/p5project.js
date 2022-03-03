@@ -8,7 +8,7 @@ let loseScreen=false;
 let winScreen=false;
 
 function preload(){
-  mario =loadImage("mario.png")
+  mario =loadImage("js/mario.png")
 }
 
 function setup(){
