@@ -1,1 +1,1 @@
-# p5 This repository is about the final project of Personal Data Narratives using p5.js #
+# p5 This repository is about Personal Data Narratives using p5.js #
